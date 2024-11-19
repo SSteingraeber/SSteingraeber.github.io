@@ -7,15 +7,15 @@
 
 <body>
     <script>
-        let params = new URL(document.location.toString()).searchParams;
+        let params = new URL(document.location).searchParams;
         // let server = "archipelago.gg";
-        let server = params.get("server");
+        let server = params.get("server").toString();
         // let port = 49431;
         let port = params.get("port");
         let password = undefined;
         // let password = params.get("password");
         // let username = "SunnyBingo";
-        let username = params.get("name");
+        let username = params.get("name").toString();
     </script>
     <style>
         * {
