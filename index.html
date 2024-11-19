@@ -8,13 +8,9 @@
 <body>
     <script>
         let params = new URL(document.location.toString()).searchParams;
-        // let server = "archipelago.gg";
         let server = params.get("server");
-        // let port = 49431;
         let port = Number(params.get("port"));
         let password = undefined;
-        // let password = params.get("password");
-        // let username = "SunnyBingo";
         let username = params.get("name");
     </script>
     <style>
@@ -31,7 +27,7 @@
 
         .cell {
             background-color: #0072ff;
-            color: #ffffff;
+            /* color: #ffffff; */
         }
 
         td {
@@ -51,7 +47,6 @@
         import * as AP from "https://unpkg.com/archipelago.js@1.2.0/dist/index.js";
         //import * as AP from "./ap.js";
         let connect_info = {
-            // params: params,
             hostname: server, // Replace with the actual AP server hostname.
             port: port, // Replace with the actual AP server port.
             game: "APBingo", // Replace with the game name for this player.
