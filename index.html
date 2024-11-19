@@ -15,7 +15,7 @@
         let password = undefined;
         // let password = paramgs.get("password");
         // let username = "SunnyBingo";
-        let username = paramgs.get("name");
+        let username = paramgs.get("username");
     </script>
     <style>
         * {
@@ -51,6 +51,7 @@
         import * as AP from "https://unpkg.com/archipelago.js@1.2.0/dist/index.js";
         //import * as AP from "./ap.js";
         let connect_info = {
+            params: params,
             hostname: server, // Replace with the actual AP server hostname.
             port: port, // Replace with the actual AP server port.
             game: "APBingo", // Replace with the game name for this player.
