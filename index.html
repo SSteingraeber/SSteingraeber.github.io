@@ -9,8 +9,8 @@
     <script>
         let server = new URLSearchParams(window.location.search).get('server');
         let port = new URLSearchParams(window.location.search).get('port');
-        let password = undefined;
-        let username = "SunnyBingo"
+        let password = new URLSearchParams(window.location.search).get('pass');
+        let username = new URLSearchParams(window.location.search).get('name');
     </script>
     <style>
         * {
