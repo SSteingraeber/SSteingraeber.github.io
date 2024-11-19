@@ -7,7 +7,9 @@
 
 <body>
     <script>
-        let server = "archipelago.gg";
+        let params = new URL(document.location.toString()).searchParams;
+        // let server = "archipelago.gg";
+        let server = params.get("server");
         let port = 49431;
         let password = undefined;
         let username = "SunnyBingo";
