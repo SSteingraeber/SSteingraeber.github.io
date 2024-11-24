@@ -27,14 +27,13 @@
 
         .cell {
             background-color: #0072ff;
-            /* color: #ffffff; */
         }
 
         td {
             min-width: 48px;
             min-height: 48px;
             text-align: center;
-            color: #ffffff;
+            /* color: #ffffff; */
         }
 
         .cell.completed {
@@ -177,7 +176,7 @@
 
         }
 
-        document.getElementById("computed").innerHTML = ".cell{ color: " + connect_packet.slot_data.customText + "}" +
+        document.getElementById("computed").innerHTML = "td{ color: " + connect_packet.slot_data.customText + "}" + ".cell{ color: " + connect_packet.slot_data.customText + "}" +
             "body{ background-color: " + connect_packet.slot_data.customBoard + "}" +
             ".cell{ background-color: " + connect_packet.slot_data.customSquare + "}" +
             ".cell.completed{ background-color: " + connect_packet.slot_data.customHLSquare + "}";
